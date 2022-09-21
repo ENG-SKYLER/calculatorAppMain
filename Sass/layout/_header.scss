@@ -1,0 +1,32 @@
+header {
+  border: 1px solid red;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  .toggle-container {
+    align-self: center;
+    width: 71px;
+    height: 26px;
+    background-color: var(--key-background);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    input {
+      align-self: center;
+      width: 18px;
+      height: 18px;
+      background-color: var(--key-toggle-background-red);
+      counter-increment: count;
+      appearance: none;
+      border-radius: 50%;
+      position: relative;
+      //   &::after {
+      //     content: counter(count);
+      //     position: absolute;
+      //     top: -10px;
+      //   }
+    }
+  }
+}

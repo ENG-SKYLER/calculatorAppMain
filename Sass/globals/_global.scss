@@ -1,0 +1,58 @@
+@use "../util/index2" as *;
+
+// color switch vairable
+
+:root {
+  //backgrounds
+  --main-background: hsl(222, 26%, 31%);
+  --toggle-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  //keys
+  --key-background: hsl(225, 21%, 49%);
+  --key-shadow: hsl(224, 28%, 35%);
+  --key-toggle-background-red: hsl(6, 63%, 50%);
+  --key-shadow-1: hsl(6, 70%, 34%);
+  --key-background-light: hsl(30, 25%, 89%);
+  --key-shadow-2: hsl(28, 16%, 65%);
+  //texts
+  --very-dark-text: hsl(221, 14%, 31%);
+  --white: hsl(0, 0, 100%);
+}
+.theme-1 {
+  //backgrounds
+  --main-background: hsl(0, 0%, 90%);
+  --toggle-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+  //keys
+  --key-background: hsl(185, 42%, 37%);
+  --key-shadow: hsl(185, 58%, 25%);
+  --key-toggle-background-red: hsl(25, 98%, 40%);
+  --key-shadow-1: hsl(25, 99%, 27%);
+  --key-background-light: hsl(45, 7%, 89%);
+  --key-shadow-2: hsl(35, 11%, 61%);
+  //texts
+  --very-dark-text: hsl(60, 10%, 19%);
+  --white: hsl(0, 0, 100%);
+}
+.theme-2 {
+  //backgrounds
+  --main-background: hsl(268, 75%, 9%);
+  --toggle-background: hsl(268, 71%, 12%);
+  --screen-background: hsl(268, 71%, 12%);
+  //keys
+  --key-background: hsl(281, 89%, 26%);
+  --key-shadow: hsl(285, 91%, 52%);
+  --key-toggle-background-red: hsl(176, 100%, 44%);
+  --key-shadow-1: hsl(177, 92%, 70%);
+  --key-background-light: hsl(268, 47%, 21%);
+  --key-shadow-2: hsl(290, 70%, 36%);
+  //texts
+  --very-dark-text: hsl(198, 20%, 13%);
+  --light-yellow: hsl(52, 100%, 62%);
+  --white: hsl(0, 0, 100%);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
