@@ -1,3 +1,14 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  p {
+    font-size: 0.75rem;
+    margin-right: 27px;
+    color: var(--text);
+    letter-spacing: rem(1);
+  }
+}
+
 // .toggle-container {
 //   width: 50px;
 //   display: flex;

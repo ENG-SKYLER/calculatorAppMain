@@ -1,0 +1,26 @@
+@use "../util/index2" as *;
+
+.result-container {
+  padding: 1.6rem;
+  margin-top: rem(30);
+  border-radius: 12px;
+  width: 100%;
+  background-color: var(--screen-background);
+  height: rem(88);
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  @include breakpoint(medium) {
+    height: rem(117);
+  }
+  .result {
+    color: var(--text);
+    font-size: rem(40);
+    margin-top: rem(30);
+    margin-right: rem(5);
+    @include breakpoint(medium) {
+      font-size: 3.5rem;
+    }
+  }
+}

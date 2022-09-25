@@ -1,0 +1,63 @@
+@use "../util/index2" as *;
+.calc {
+  @include breakpoint(medium) {
+    padding: rem(32);
+    grid-gap: rem(25);
+    height: rem(491.21);
+  }
+  margin-top: rem(24);
+  border-radius: rem(10);
+  padding: rem(24);
+  width: 100%;
+  height: rem(420);
+
+  background-color: var(--toggle-background);
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(5, 4rem);
+  grid-gap: rem(13);
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: rem(60);
+    width: rem(60);
+    padding-top: 0.5rem;
+    @include breakpoint(medium) {
+      width: rem(101);
+      height: rem(60);
+    }
+    background-color: var(--key-background-light);
+    color: var(--text);
+    color: var(--very-dark-text);
+    font-size: 2.5rem;
+    border-radius: 9.6px;
+    box-shadow: 0px 5px 0px 0px var(--key-shadow-2);
+    font-weight: 700;
+    &:nth-child(4),
+    &:nth-child(17) {
+      background-color: var(--key-background);
+      font-size: 1.75rem;
+      color: var(--text);
+      color: var(--func);
+      box-shadow: 0px 5px 0px 0px var(--key-shadow);
+    }
+    &:nth-child(17) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      width: auto;
+    }
+    &:last-child {
+      background-color: var(--key-toggle-background-red);
+      box-shadow: 0px 5px 0px 0px var(--key-shadow-1);
+      color: var(--equal);
+      grid-column-start: 3;
+      grid-column-end: 5;
+      width: auto;
+    }
+    cursor: pointer;
+    &:hover {
+      filter: brightness(130%);
+    }
+  }
+}

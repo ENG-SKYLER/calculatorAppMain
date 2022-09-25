@@ -1,32 +1,53 @@
-header {
-  border: 1px solid red;
-}
+@use "../util/index2" as *;
 
 .header {
   display: flex;
   justify-content: space-between;
+  padding-left: rem(8);
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: var(--text);
+  }
   .toggle-container {
     align-self: center;
     width: 71px;
     height: 26px;
-    background-color: var(--key-background);
+    background-color: var(--toggle-background);
     display: flex;
     justify-content: space-around;
     border-radius: 20px;
-    input {
-      align-self: center;
-      width: 18px;
-      height: 18px;
+    position: relative;
+    cursor: pointer;
+    .toggler {
+      position: absolute;
+      width: rem(16);
+      height: rem(16);
       background-color: var(--key-toggle-background-red);
+      border-radius: 50%;
+      top: 5px;
+      left: 5px;
+      transition: all 0.1s ease-in-out;
+    }
+    input {
+      align-self: flex-end;
       counter-increment: count;
       appearance: none;
-      border-radius: 50%;
       position: relative;
-      //   &::after {
-      //     content: counter(count);
-      //     position: absolute;
-      //     top: -10px;
-      //   }
+      &::after {
+        content: counter(count);
+        position: absolute;
+        font-size: 0.75rem;
+        top: -44px;
+        left: 8px;
+        color: var(--text);
+      }
+    }
+    label {
+      height: 24px;
+      width: 20px;
+      background-color: transparent;
+      cursor: pointer;
     }
   }
 }

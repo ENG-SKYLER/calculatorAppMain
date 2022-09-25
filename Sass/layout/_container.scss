@@ -1,9 +1,13 @@
 @use "../util/index2" as *;
 
 .container {
-  max-width: rem(327);
+  width: rem(326);
+  min-width: rem(300);
   margin: 0 auto;
   @include breakpoint(medium) {
     width: rem(540);
   }
+}
+.container > * {
+  transition: all 0.3s ease-in-out;
 }
