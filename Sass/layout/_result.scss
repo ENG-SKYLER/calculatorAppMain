@@ -11,6 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  overflow-x: auto;
+  overflow-y: hidden;
   @include breakpoint(medium) {
     height: rem(117);
   }

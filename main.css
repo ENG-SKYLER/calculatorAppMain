@@ -448,6 +448,8 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 @media (min-width: 43.75em) {
   .result-container {
