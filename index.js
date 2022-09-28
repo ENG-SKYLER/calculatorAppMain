@@ -84,7 +84,12 @@ class Calculator {
     this.result = this.result.toString().slice(0, -1); // this function used for DELETE button to delete the last number in the result
   }
   displayUpdate() {
-    this.resultScreen.innerText = this.result; // set the result screen to the result vairable
+    this.resultScreen.innerText = this.formatNumber(this.result); // set the result screen to the result vairable
+  }
+  formatNumber(number) {
+    const float = parseFloat(number);
+    if (isNaN(float)) return "";
+    return float.toLocaleString("en");
   }
 }
 const calculator = new Calculator(resultScreen); // initlize the class to start the opration
@@ -113,3 +118,6 @@ deleteButton.addEventListener("click", () => {
   calculator.del();
   calculator.displayUpdate();
 });
+
+let test = "399891";
+console.log(parseFloat(test).toLocaleString("ar"));
